@@ -48,7 +48,7 @@ app.get("/weather", (req,res)=>{
         })
     }
     console.log( req.query);
-
+console.log("data");
 });
 
 // app.get("*" , function(req,res){
