@@ -5,7 +5,7 @@ const app = express();
 const hbs = require("hbs");
 
 const api = require("./api");
-
+const port = process.env.PORT || 3000;
 const newpath = path.join(__dirname , "/client_js")
 console.log(newpath);
 const pathname = path.join(__dirname , "/public");
@@ -57,6 +57,6 @@ console.log("data");
 
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log(chalk.blue.inverse.italic("server has started"));
 })
